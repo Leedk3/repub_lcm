@@ -1,0 +1,23 @@
+package eurecar;
+
+/**
+ * Eurecar filtered position and heading data
+ */
+
+struct pos_ros_t
+{
+	int64_t utime;		// utime [usec]
+	double dt;			// dt [sec] (0:not valid solution)
+	double x_est;			// x position [m]
+	double y_est;			// y position [m]	
+	double h_est;			// heading cw [rad]
+	double x_raw;			// x position [m]
+	double y_raw;			// y position [m]	
+	double h_raw;			// heading cw [rad]
+	double v;			// speed [m/sec]
+	double get_head;	//get heading
+	double get_pose;	//get position
+	double pos_init;	//position_initialize
+	double gps_init;	//gps_initialize	
+	double yaw_rate;	// yaw rate cw [rad/sec]
+}

@@ -1,0 +1,17 @@
+package eurecar;
+
+/**
+ * Eurecar IMU raw data(linear acc & angular velocity)
+ */
+
+struct imu_ros_t
+{
+	int64_t utime;			
+	double x_acc;			
+	double y_acc;			
+	double z_acc; 		
+
+	double rollrate;	
+	double pitchrate;	
+	double yawrate; 	
+}
